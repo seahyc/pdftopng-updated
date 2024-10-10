@@ -18,5 +18,6 @@ __title__ = "pdftopng"
 __description__ = "A PDF to PNG conversion library."
 __url__ = "https://github.com/seahyc/pdftopng-updated"
 __version__ = generate_version(VERSION, prerelease=PRERELEASE, revision=REVISION)
+__author_email__ = "seahyingcong@gmail.com"
 __author__ = "Seah Ying Cong"
 __license__ = "GPL-2.0"
