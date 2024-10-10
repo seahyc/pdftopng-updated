@@ -86,7 +86,7 @@ def has_flag(compiler, flagname):
         fname = f.name
     try:
         compiler.compile([fname], extra_postargs=[flagname])
-    except setuptools.distutils.errors.CompileError:
+    except setuptools.errors.CompileError:
         return False
     finally:
         try:
@@ -114,7 +114,7 @@ class BuildExt(build_ext):
 
     c_opts = {
         "msvc": ["/MD", "/EHsc", "/std:c++14"],
-        "unix": ["-O3", "-Wall", "-shared", "-fPIC"],
+        "unix": ["-O3", "-Wall", "-fPIC"],
     }
 
     soname = ""
@@ -182,6 +182,7 @@ def setup_package():
             "Programming Language :: Python :: 3.6",
             "Programming Language :: Python :: 3.7",
             "Programming Language :: Python :: 3.8",
+            "Programming Language :: Python :: 3.12",
         ],
         cmdclass={"build_ext": BuildExt},
     )
