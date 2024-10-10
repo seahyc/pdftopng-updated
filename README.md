@@ -37,7 +37,3 @@ $ pytest --verbose --cov-report term --cov-report xml --cov=pdftopng tests/test_
 ## Versioning
 
 `pdftopng` uses [Semantic Versioning](https://semver.org/). For the available versions, see the tags on this repository.
-
-## License
-
-This project is licensed under GPLv2, see the [LICENSE](https://raw.githubusercontent.com/vinayak-mehta/pdftopng/master/LICENSE) file for details.

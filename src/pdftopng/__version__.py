@@ -16,8 +16,7 @@ def generate_version(version, prerelease=None, revision=None):
 
 __title__ = "pdftopng"
 __description__ = "A PDF to PNG conversion library."
-__url__ = "https://github.com/vinayak-mehta/pdftopng"
+__url__ = "https://github.com/seahyc/pdftopng-updated"
 __version__ = generate_version(VERSION, prerelease=PRERELEASE, revision=REVISION)
-__author__ = "Vinayak Mehta"
-__author_email__ = "vmehta94@gmail.com"
+__author__ = "Seah Ying Cong"
 __license__ = "GPL-2.0"
